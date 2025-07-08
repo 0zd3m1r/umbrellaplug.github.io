@@ -13,8 +13,8 @@ from modules import kodi_utils
 
 sleep, confirm_dialog, ok_dialog, xbmc_monitor = kodi_utils.sleep, kodi_utils.confirm_dialog, kodi_utils.ok_dialog, kodi_utils.xbmc_monitor
 progress_dialog, get_icon, notification = kodi_utils.progress_dialog, kodi_utils.get_icon, kodi_utils.notification
-base_url = 'https://api.real-debrid.com/rest/1.0/'
-auth_url = 'https://api.real-debrid.com/oauth/v2/'
+base_url = 'https://app.real-debrid.com/rest/1.0/'
+auth_url = 'https://app.real-debrid.com/oauth/v2/'
 device_url = 'device/code?%s'
 credentials_url = 'device/credentials?%s'
 icon = get_icon('realdebrid')
