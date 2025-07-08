@@ -18,8 +18,8 @@ from resources.lib.modules.source_utils import supported_video_extensions
 getLS = control.lang
 getSetting = control.setting
 FormatDateTime = "%Y-%m-%dT%H:%M:%S.%fZ"
-rest_base_url = 'https://api.real-debrid.com/rest/1.0/'
-oauth_base_url = 'https://api.real-debrid.com/oauth/v2/'
+rest_base_url = 'https://app.real-debrid.com/rest/1.0/'
+oauth_base_url = 'https://app.real-debrid.com/oauth/v2/'
 unrestrict_link_url = 'unrestrict/link'
 device_code_url = 'device/code?%s'
 credentials_url = 'device/credentials?%s'
@@ -41,7 +41,7 @@ addonFanart = control.addonFanart()
 
 session = requests.Session()
 retries = Retry(total=5, backoff_factor=0.1, status_forcelist=[500, 502, 503, 504])
-session.mount('https://api.real-debrid.com', HTTPAdapter(max_retries=retries, pool_maxsize=100))
+session.mount('https://app.real-debrid.com', HTTPAdapter(max_retries=retries, pool_maxsize=100))
 
 
 class RealDebrid:
